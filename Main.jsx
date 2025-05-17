@@ -1,6 +1,6 @@
 import React from "react"
 import IngredientsList from "./components/IngredientsList"
-import ClaudeRecipe from "./components/ClaudeRecipe"
+import EliteRecipe from "./components/EliteRecipe"
 import { getRecipeFromMistral } from "./ai"
 
 export default function Main() {
@@ -38,7 +38,7 @@ export default function Main() {
                 />
             }
 
-            {recipe && <ClaudeRecipe recipe={recipe} />}
+            {recipe && <EliteRecipe recipe={recipe} />}
         </main>
     )
 }
